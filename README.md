@@ -64,7 +64,7 @@ reboot
 ## 安装cdnfly控制面板
 
 ```bash
-curl -fsSL [https://github.com/armourehugo5-del/cdnfly](https://github.com/laosi214365-droid/2026cdnfly)/raw/refs/heads/main/master.sh -o master.sh && chmod +x master.sh && ./master.sh --es-dir /home/es
+curl -fsSL https://github.com/laosi214365-droid/2026cdnfly/raw/refs/heads/main/master.sh -o master.sh && chmod +x master.sh && ./master.sh --es-dir /home/es
 ```
 
 <p>主控和被控均不能在 已安装nginx的情况下 执行安装命令，必须确保80 443端口未被占用!!!<br />
@@ -81,7 +81,7 @@ curl -fsSL [https://github.com/armourehugo5-del/cdnfly](https://github.com/laosi
 #将 your_new_ip 替换为你自己的新主控IP</p>
 
 ```bash
-wget -qO change_ip.sh https://github.com/armourehugo5-del/cdnfly/raw/refs/heads/main/change_ip.sh && chmod +x change_ip.sh && bash change_ip.sh your_new_ip
+wget -qO change_ip.sh https://github.com/laosi214365-droid/2026cdnfly/raw/refs/heads/main/change_ip.sh && chmod +x change_ip.sh && bash change_ip.sh your_new_ip
 ```
 
 <p>或选择手动操作<br />
@@ -114,7 +114,7 @@ supervisorctl -c /opt/cdnfly/agent/conf/supervisord.conf restart all
 
 ```bash
 cd /tmp;
-wget https://github.com/armourehugo5-del/cdnfly/raw/refs/heads/main/int_es.sh -O int_es.sh;
+wget https://github.com/laosi214365-droid/2026cdnfly/raw/refs/heads/main/int_es.sh -O int_es.sh;
 chmod +x int_es.sh;
 ./int_es.sh /home/es;
 ```
